@@ -12,12 +12,7 @@
      border: 1px solid #bbb;
 }
 
-
-}
-
-/* large view navigation ************************************/
-@media (min-width: 37.5em) {
-	h1 {
+  h1 {
 		font-size: 2.5rem;
 		margin-left: 0;
 		text-align: center;
