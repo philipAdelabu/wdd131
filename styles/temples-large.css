@@ -2,11 +2,11 @@
 
 @media screen and (min-width: 500px){
 
-    section {
+    .section {
        grid-template-columns: 1fr 1fr 1fr;
     }
 
-	section img {
+	.section img {
     height: 200px;
     width: 300px;
      border: 1px solid #bbb;
@@ -41,7 +41,4 @@
 		flex: 1 1 100%;
 	}
 
-	.stuff {
-		margin: 1rem auto;
-	}
 }

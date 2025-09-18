@@ -31,12 +31,12 @@ main {
     align-content: center; 
 }
 
-main > h1 {
+main > h2 {
    text-align: center;
    margin: 10px;   
 }
 
-section {
+.section {
    display: grid;
     grid-template-columns: 1fr;
     grid-gap: 8px; 
@@ -53,7 +53,7 @@ figcaption {
     font-weight: bold;
 }
 
-section img {
+.section img {
     height: auto;
     width: 400px;
      border: 1px solid #bbb;
@@ -84,12 +84,7 @@ h1 {
 	margin-left: 1rem;
 }
 
-h2 {
-	font-size: 1.2rem;
-	color: navy;
-	text-align: left;
-	margin: 1rem;
-}
+
 
 nav {
 	max-width: 700px;
