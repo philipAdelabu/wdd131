@@ -1,5 +1,6 @@
 
 
+
 @media screen and (min-width: 500px){
 
     .section {
@@ -10,7 +11,7 @@
     height: 200px;
     width: 300px;
      border: 1px solid #bbb;
-}
+   }
 
   h1 {
 		font-size: 2.5rem;
