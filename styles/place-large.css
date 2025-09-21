@@ -58,6 +58,10 @@ main div {
     display: none;
 }
 
+main {
+    margin-bottom: 4px;
+}
+
 }
 
 
