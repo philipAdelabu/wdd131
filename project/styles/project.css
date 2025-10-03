@@ -39,7 +39,7 @@ main > h2 {
    margin-bottom: 30px;  
 }
 
-section {
+.div-section {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 8px;

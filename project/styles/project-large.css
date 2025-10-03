@@ -2,7 +2,7 @@
 @media screen and (min-width: 500px){
 
 
- section {
+ .div-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
