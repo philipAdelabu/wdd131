@@ -1,0 +1,254 @@
+:root {
+    --primary-color: #10335c;
+    --secondary-color:  #275172;
+    --accent-color: #495c4c;
+    --heading-font: 'Merriweather', serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+
+header, footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+main {
+    margin: 1rem auto;
+    max-width: fit-content;
+    align-content: center; 
+}
+
+main > h2 {
+   text-align: center;
+   margin: 10px; 
+   margin-bottom: 30px;  
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+    margin-left: 30px;
+}
+
+.frame {
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr;
+   padding: 10px;
+   border: 2px solid var(--primary-color);
+   justify-content: center;
+   place-items: center;
+   background-color: silver;
+   height: auto;
+}
+
+
+
+#keypad {
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   grid-gap: 4px; 
+   border: 1px solid var(--secondary-color);
+}
+
+.key{
+    border: 2px solid  #333;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 4px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+}
+
+.key:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.key:active {
+    box-shadow: none;
+    transform: translateY(2px);
+    background-color: #fff;
+    color: var(--primary-color)
+}
+
+.memory, .clear {
+   text-align: center;
+   color: #fff;
+   width: 90%;
+}
+
+.memory {
+    background-color: rgba(163, 166, 199, 0.911);
+    color: #000;
+}
+
+.clear {
+    background-color: rgba(172, 21, 78, 0.911);
+}
+
+
+#number-key {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+    border: 1px solid black;
+}
+
+#operator-key {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3px;
+    border: 1px solid black;
+}
+
+.area-display {
+    width: 200px;
+    height: 100px;
+    border: 2px solid  #333;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.special-function {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid var(--primary-color);
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+
+
+
+header {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#title {
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+h1 {
+	text-align: left;
+	font-family: times, serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
+
+
+
+nav {
+	max-width: 700px;
+	margin: 1rem auto;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+    color: #fff;
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "";  /* just a wayfinding symbol for the user */
+}
+
+
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: 70px; 
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+#lastModified {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+
+
+
+

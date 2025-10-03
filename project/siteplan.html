@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 131 - Dynamic web fundamentals, Online web-based calculator, Dev Commnunity, css tricks, javascript code">
+        <meta name="author" content="Philip Adelabu">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles/project.css">
+        <link rel="stylesheet" href="styles/project-large.css">
+     
+        <script src="scripts/project.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+       
+        <title> Web-based Calculator </title>
+ 
+    </head>
+        <body>
+            <header>
+                <h1 id="title">Calcualtor</h1>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="#"  title="Home Page">Home</a></li>
+                        <li><a href="#" title="About Page" class="active">About</a></li>
+                        <li><a href="#"  title="Document Page">Doc</a></li>
+                        <li><a href="#"  title="Large Page">Large</a></li>
+                    </ul>
+                </nav>
+                <button type="button" id="menu" aria-label="humburger"></button>
+            </header>
+            <main>
+                <h2>Basic Calcualtor</h2>
+                
+                <section>
+                <div>
+                <ol>
+                    <li><b>Site Name:</b> World Simple Calculator (WSC).
+                        <p>The name given to this calculator reflects its purpose. It is a very simple calculator can be used online for a daily simple computations.</p>
+                    
+                    </li>
+                    <li><b>Site Purpose:</b> For World Simple Calculator. 
+                        <p>This project is mean to provide some fundamental basic computation that is found everywhere. Making it freely available online and by means of a web-based will make it easy to access.</p>
+                   </li>
+                    <li><b>Scenarios:</b> 
+                        <ul>
+                            <li>Is the calculator truly freely avalaible ?</li>
+                            <li>Does it sotre computation result ?</li>
+                            <li>Does it have dark mode ?</li>
+                        </ul>
+                    </li>
+                    <li><b>Color Schema:</b> 
+                         <ul>
+                            <li>Primary color: <b>#10335c</b>. This will be used on the header and footer.</li>
+                            <li>Secondary color: <b> #275172</b>. This will be applied to the key and button of the calculator.</li>
+                         </ul>
+                    </li>
+                    <li><b>Typography:</b> 
+                         <ul>
+                            <li>Heading Font: <b>'Merriweather', serif</b>.. These will be applied to the headings.</li>
+                            <li>Body Font: <b>"Roboto", sans-serif </b>.. These will be applied to the body of the site.</li>
+                         </ul>
+                    </li>
+                    <li><b>Wireframe:</b> The calculator design at the right side here shows the wireframe we intend to used. </li>
+                </ol>
+                </div>
+             
+                
+                       <div class="frame">
+                            <div id="display">
+                                 <div class="area-display display-output"></div>
+                            </div>
+                            <div class="special-function">
+                              <div class="key memory">Mem</div>
+                              <div class="key clear">CLR</div>
+                            </div>
+                            <div id="keypad">
+                                <div id="number-key">
+                                    <div class="key number">7</div>
+                                    <div class="key number">8</div>
+                                    <div class="key number">9</div>
+                                    <div class="key number">4</div>
+                                    <div class="key number">5</div>
+                                    <div class="key number">6</div>
+                                    <div class="key number">1</div>
+                                    <div class="key number">2</div>
+                                    <div class="key number">3</div>
+                                    <div class="key number">0</div>
+                                    <div class="key number">.</div>
+                                    <div class="key number">=</div>
+                                </div>
+                                <div id="operator-key">
+                                    <div class="key operator">+</div>
+                                    <div class="key operator">-</div>
+                                    <div class="key operator">/</div>
+                                    <div class="key operator">%</div>
+                                </div>
+                            </div>
+                        </div>
+                   </section>
+            
+            </main>
+            <footer>
+                  <p> &copy; <span id="currentyear"></span> | Philip Adleabu </p>
+                <p id="lastModified"></p>
+            </footer>
+        </body>
+    
+</html>
