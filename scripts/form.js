@@ -38,17 +38,30 @@ products.forEach(element => {
 });
 
 
- const form = document.getElementById('the-form');
-
-const submitForm = () => {
-    const form = document.getElementById('the-form');
-    const userReview = new Object();
-    console.log(form);
-   console.log('hello');
+const submitForm = (event) => {
+    event.preventDefault();
+    storage();
+   window.location = "review.html";
 
 };
 
+
+
+const storage = () => {
+    var counter = 0;
+
+    if(localStorage.getItem('counter') !== null)
+         counter = localStorage.getItem('counter');
+    
+    counter++;
+    localStorage.setItem('counter', counter);
+    return counter;
+}
+
+
+ const form = document.getElementById('the-form');
 form.addEventListener('submit', submitForm);
+
 
 
 

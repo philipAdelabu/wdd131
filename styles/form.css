@@ -90,6 +90,9 @@ input[type=checkbox]{
     display: inline;
 }
 
+input[type=radio]{
+    width: 50px;
+}
 
 
 input[type=text], input[type=date], select, textarea, #submit {
@@ -116,11 +119,28 @@ form {
 }
 
 #submit {
-   background-color: rgb(104, 143, 104);
+   background-color: rgb(13, 99, 13);
    color: #fff;
    text-align: center;
    padding: 10px;
-   border: 0.8 solid rgb(104, 143, 104);
+}
+
+#main {
+    margin: 0 auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#counter {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    padding: 60px;
+    font-size: 50px;
+    border-radius: 30px;
+   
 }
 
 
