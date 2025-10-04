@@ -1,0 +1,96 @@
+<!Doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 131 - Dynamic web fundamentals, Philip Adelabu, Dev Commnunity, css tricks, javascript code">
+        <meta name="author" content="Philip Adelabu | WDD 131">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+       
+        <link href="styles/form-large.css"  rel="stylesheet">
+        <link href="styles/form.css"  rel="stylesheet">
+
+        <script src="scripts/form.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+
+        <title>A Product Review Responsive Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            <form method="get" name="theForm" id="the-form">
+                <label for="product">Product Name</label>
+                <select required name="prod-name" id="product">
+                    <option selected disabled> -- Select a Product -- </option>
+                </select>
+
+               
+                 <p>Over Rating</p>
+                <div id="stars">
+                   
+                     <div class="star-group">
+                         <label class="star" for="star-1">&star;</label>
+                         <input type="radio" name="rating" value="1" required id="star-1">
+                    </div>
+                     <div class="star-group">
+                         <label class="star" for="star-2">&star;&star;</label>
+                         <input type="radio" name="rating" value="2" required id="star-2">
+                    </div>
+                     <div class="star-group">
+                         <label class="star" for="star-3">&star;&star;&star;</label>
+                         <input type="radio" name="rating" value="3" required id="star-3">
+                    </div>
+                     <div class="star-group">
+                         <label class="star" for="star-4">&star;&star;&star;&star;</label>
+                         <input type="radio" name="rating" value="4" required id="star-4">
+                    </div>
+                     <div class="star-group">
+                         <label class="star" for="star-5">&star;&star;&star;&star;&star;</label>
+                         <input type="radio" name="rating" value="5" required id="star-5">
+                    </div>
+                </div>
+                
+
+                <label for="date-installation">Date of Installation</label>
+                <input type="date" name="date-installation" required id="date-installation">
+
+                <p>Which features did you find useful in the product? <br><i>(Check all that applies)</i></p>
+                 <br />
+                <div id="features">
+                  <div class="feature-group">
+                    <input type="checkbox" value="Durability" name="durability" id="durability">
+                    <label for="durability">Durability</label> 
+                  </div>
+                  <div class="feature-group">
+                    <input type="checkbox" value="Ease of Use" name="ease-of-use" id="ease-of-use"> 
+                    <label for="ease-of-use">Ease of Use</label>
+                  </div>
+                  <div class="feature-group">
+                    <input type="checkbox" value="Performance" name="performance" id="performance">
+                    <label for="performance">Performance</label> 
+                  </div>
+                  <div class="feature-group">
+                    <input type="checkbox" value="Design" name="design" id="design">
+                    <label for="design">Design</label> 
+                  </div>
+                </div>
+
+                <label for="reiew">Written Review</label>
+                <textarea name="review" id="review" cols="40" rows="6"></textarea>
+
+                <label for="user-name">User Name <b>(optional)</b></label>
+                <input type="text" name="user-name" id="user-name" placeholder="John Doe">
+                <input type="submit" name="submit" id="submit" value="Post Review">
+            
+            </form>
+        </main>
+          <footer>
+                  <p> &copy; <span id="currentyear"></span> | Philip Adleabu | Nigeria</p>
+                <p id="lastModified"></p>
+          </footer>
+    </body>
+</html>

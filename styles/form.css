@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #85212a;
+    --secondary-color: #532124;
+    --heading-font: 'Merriweather', serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+
+header, footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header > h1 {
+    color: #fff;
+    text-align: center;
+    padding: 30px 0px;
+}
+main {
+    margin: 1rem auto;
+    width: 400px;
+    align-content: center; 
+}
+
+main > h2 {
+   text-align: center;
+   margin: 10px;   
+}
+
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+
+.star {
+    margin: 0px 5px;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+#stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.star-group {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#features{
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-group {
+    align-items: center;
+    margin: 3px;
+}
+
+input[type=checkbox]{ 
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;  
+}
+
+.feature-group label {
+    display: inline;
+}
+
+
+
+input[type=text], input[type=date], select, textarea, #submit {
+    width: 96%;
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 3px 5px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    margin-bottom: 0px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 1px solid var(--primary-color);
+}
+
+form {
+    background-color: #eee;
+    padding: 20px;
+    border: 2px solid var(--secondary-color); 
+    margin: 0 auto;
+}
+
+#submit {
+   background-color: rgb(104, 143, 104);
+   color: #fff;
+   text-align: center;
+   padding: 10px;
+   border: 0.8 solid rgb(104, 143, 104);
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: 70px; 
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+#lastModified {
+    font-size: 13px;
+    margin-top: 10px;
+}
