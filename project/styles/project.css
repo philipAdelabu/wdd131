@@ -33,12 +33,12 @@ main {
     align-content: center; 
     align-items: center;
     padding: 0px 40px;
-    text-align: center;
 }
 
 main > p  {
    margin: 10px; 
    margin-bottom: 30px; 
+   text-align: center;
 }
 
 main > h2 {
@@ -338,8 +338,11 @@ label {
     font-size: 18px;
 }
 
-img {
+  img {
     border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
 }
 
