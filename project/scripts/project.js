@@ -15,14 +15,17 @@ const getChar = (e) => {
 	var i = e.innerHTML;
 	const inp = input.innerHTML;
 	var result = 0;
-
+    
+	if(output.innerHTML === "ERR"){
+		output.innerHTML = ""
+	}
 
    if(('/, *, -, +,.'.indexOf(i) > -1) && ('/, *, -, +, . '.indexOf(inp[inp.length-1]) > -1)){
 	    i = "";
    }
 
 	if(i === '=' && input.innerHTML !== ''){
-		if(('/, *, -, + , ., ='.indexOf(i) > -1) && (input.innerHTML).length === 1){
+		if(('/, *, -, + , ., ='.indexOf(i) > -1) && ('/, *, -, + , ., ='.indexOf(input.innerHTML) > -1) && (input.innerHTML).length === 1){
             input.innerHTML = "";
 			return ;
 		} 
@@ -32,8 +35,8 @@ const getChar = (e) => {
 		 output.innerHTML = result;
 		 input.innerHTML = "";
 		 }catch(e){
-			output.innerHTML = "";
-		    input.innerHTML = "";
+			 output.innerHTML = "ERR";
+		     input.innerHTML = "";
 		 }
 	
 		 return;
@@ -65,8 +68,6 @@ const getChar = (e) => {
 	  input.innerHTML = output.innerHTML + "" + i;
    } else
      input.innerHTML = input.innerHTML + "" + i;
-	 
-
 	 
 }
 

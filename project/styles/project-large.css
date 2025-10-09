@@ -14,10 +14,7 @@
 		text-align: center;
 	}
 
-	h2 {
-		font-size: 2rem;
-		text-align: center;
-	}
+	
 
 	#menu {
 		display: none; /* hide hamburger button */

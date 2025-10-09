@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="styles/project.css">
         <link rel="stylesheet" href="styles/project-large.css">
      
-        <script src="scripts/project.js" defer></script>
+        <script src="scripts/contact.js" defer></script>
         <script src="scripts/getdates.js" defer></script>
        
         <title> Web-based Calculator </title>
@@ -20,57 +20,31 @@
     </head>
         <body>
             <header>
-                <h1 id="title">Calcualtor</h1>
+                <h1 id="title">Calculator</h1>
                 <nav>
                     <ul class="navigation">
-                        <li><a href="#"  title="Home Page">Home</a></li>
-                        <li><a href="#" title="About Page" class="active">About</a></li>
-                        <li><a href="#"  title="Document Page">Doc</a></li>
-                        <li><a href="#"  title="Large Page">Large</a></li>
+                        <li><a href="calculator.html"  title="Calculator Page">Calculator</a></li>
+                        <li><a href="about.html" title="About Page" class="active">About</a></li>
+                        <li><a href="doc.html"  title="Document Page">Doc</a></li>
+                        <li><a href="contact.html"  title="Contactu us Page">Contact Us</a></li>
                     </ul>
                 </nav>
                 <button type="button" id="menu" aria-label="humburger"></button>
             </header>
             <main>
-                <h2>World Simple Calcualtor</h2>
-                
-                <div class="div-calculator">   
-                       <div class="frame">
-                            <div id="display">
-                                 <div class="area-display">
-                                       <div class="display-char" id="display-input"></div>
-                                       <div class="display-char" id="display-result"></div>
-                                 </div>
-                            </div>
-                            <div class="special-function">
-                              <div onclick="getChar(this);" class="key memory">STR</div>
-                              <div onclick="getChar(this);" class="key recall">RCL</div>
-                              <div onclick="getChar(this);" class="key clear">CLR</div>
-                            </div>
-                            <div id="keypad">
-                                <div id="number-key">
-                                    <div onclick="getChar(this);" class="key number">7</div>
-                                    <div onclick="getChar(this);" class="key number">8</div>
-                                    <div onclick="getChar(this);" class="key number">9</div>
-                                    <div onclick="getChar(this);" class="key number">4</div>
-                                    <div onclick="getChar(this);" class="key number">5</div>
-                                    <div onclick="getChar(this);" class="key number">6</div>
-                                    <div onclick="getChar(this);" class="key number">1</div>
-                                    <div onclick="getChar(this);" class="key number">2</div>
-                                    <div onclick="getChar(this);" class="key number">3</div>
-                                    <div onclick="getChar(this);" class="key number">0</div>
-                                    <div onclick="getChar(this);" class="key number">.</div>
-                                    <div onclick="getChar(this);" class="key number">=</div>
-                                </div>
-                                <div id="operator-key">
-                                    <div onclick="getChar(this);" class="key operator">+</div>
-                                    <div onclick="getChar(this);" class="key operator">-</div>
-                                    <div onclick="getChar(this);" class="key operator">/</div>
-                                    <div onclick="getChar(this);" class="key operator">*</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <h2>Feedback</h2>
+                <p>Give us a feedback, for we are just a single click away to hearing from you. We will appreciate any feedback you may provide to improve the development of the calculator.</p>
+                <form action="response.html" method="get" name="form" id="form">
+                    
+                    <label for="name">Name <span class="star">*</span></label>
+                    <input required type="text" name="name" id="name">
+                    <label for="email">Email <span class="star">*</span></label>
+                    <input required type="email" name="email" id="email">
+                    <label for="content">Feedback Message <span class="star">*</span></label>
+                    <textarea cols="40" rows="6" name="content" id="content" required></textarea>
+
+                    <input type="submit" id="submit" name="submit" value="Send Feedback">
+                </form>
             
             </main>
             <footer>

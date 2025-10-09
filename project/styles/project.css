@@ -29,15 +29,24 @@ h1, h2, h3 {
 }
 main {
     margin: 1rem auto;
-    max-width: fit-content;
+    width: fit-content;
     align-content: center; 
+    align-items: center;
+    padding: 0px 40px;
+}
+
+main > p  {
+   text-align: center;
+   margin: 10px; 
+   margin-bottom: 30px; 
+   width: 350px; 
 }
 
 main > h2 {
-   text-align: center;
-   margin: 10px; 
-   margin-bottom: 30px;  
-}
+		font-size: 2rem;
+		text-align: center;
+        margin-bottom: 30px;
+	}
 
 .div-section {
     display: grid;
@@ -282,6 +291,54 @@ footer p {
     font-size: 13px;
     margin-top: 10px;
 }
+
+/* Section that handles the form of the contact page */
+
+
+input[type=text], input[type=email], textarea, #submit {
+    width: 96%;
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 4px 5px;
+}
+
+textarea {
+    margin-bottom: 0px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 1px solid var(--primary-color);
+}
+
+form {
+    background-color: #eee;
+    padding: 0px 20px 20px 20px;
+    border: 2px solid var(--secondary-color); 
+    margin: 0 auto;
+    width: 300px;
+}
+
+#submit {
+   background-color: rgb(19, 20, 51);
+   color: #fff;
+   text-align: center;
+   padding: 10px;
+   margin-top: 6px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+
+.star {
+    color: red;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
 
 
 
