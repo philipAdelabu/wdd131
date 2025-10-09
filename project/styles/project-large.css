@@ -2,6 +2,7 @@
 @media screen and (min-width: 500px){
 
 
+
  .div-section {
     display: grid;
     grid-template-columns: 1fr 1fr;

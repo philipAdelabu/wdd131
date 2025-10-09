@@ -8,11 +8,10 @@ hamButton.addEventListener('click', () => {
 });
 
 
-
 const getChar = (e) => {
 	var input = document.getElementById('display-input');
 	var output = document.getElementById('display-result');
-	var i = e.innerHTML;
+	var i = e.textContent;
 	const inp = input.innerHTML;
 	var result = 0;
     
@@ -71,3 +70,11 @@ const getChar = (e) => {
 	 
 }
 
+
+const keys = document.getElementsByClassName('keys');
+
+for(const key of keys){
+     key.addEventListener('click',  () => {
+		getChar(key);
+	 });
+}

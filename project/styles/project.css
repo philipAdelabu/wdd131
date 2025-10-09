@@ -28,24 +28,23 @@ h1, h2, h3 {
     font-family: var(--heading-font);
 }
 main {
-    margin: 1rem auto;
+    margin: 0 auto;
     width: fit-content;
     align-content: center; 
     align-items: center;
     padding: 0px 40px;
+    text-align: center;
 }
 
 main > p  {
-   text-align: center;
    margin: 10px; 
    margin-bottom: 30px; 
-   width: 350px; 
 }
 
 main > h2 {
 		font-size: 2rem;
 		text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
 	}
 
 .div-section {
@@ -314,8 +313,8 @@ form {
     background-color: #eee;
     padding: 0px 20px 20px 20px;
     border: 2px solid var(--secondary-color); 
-    margin: 0 auto;
     width: 300px;
+    margin: 0 auto;
 }
 
 #submit {
@@ -337,6 +336,11 @@ label {
     color: #000;
     font-weight: bolder;
     font-size: 18px;
+}
+
+img {
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 
